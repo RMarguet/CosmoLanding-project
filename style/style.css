@@ -1,0 +1,395 @@
+/** _________VARIABLES_________ **/
+/** --------------------------- **/
+
+:root {
+    --link-button-background-color-black: #0D0F12;
+    --link-button-background-color-white: #FFFFFF;
+    --link-button-background-color-grey: #A9C2CB;
+    
+    --link-text-white-color: #FFFFFF;
+    --link-text-black-color: #020305;
+    --link-text-grey-color: #5C5050;
+}
+
+/** _________GENERAL_________ **/
+/** ------------------------- **/
+
+* {
+    margin: 0; /** Pour rectifier les marges natives du navigateur **/
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+    /** _________LINK_BUTTON_________ **/
+
+    .link-button {
+        display: inline-block;
+        border-radius: 20px;
+        text-decoration: none;
+    }
+
+    .link-button--menu-black {
+        background-color: var(--link-button-background-color-black);
+        color: var(--link-text-white-color);
+        box-shadow: 0px 19px 45px -10px rgba(13, 15, 18, 0.50);
+        padding: 22px 52px;
+        font-size: 18px;
+    }
+
+    .link-button--black {
+        background-color: var(--link-button-background-color-black);
+        color: var(--link-text-white-color);
+        box-shadow: 0px 19px 45px -10px rgba(13, 15, 18, 0.50);
+        padding: 22px 52px;
+        font-size: 24px;
+    }
+
+    .link-button--white {
+        color: var(--link-text-black-color);
+        font-size: 24px;
+        padding: 26px 0px 26px 0px;
+        margin-right: 20px;
+    }
+
+    .link-button--grey {
+        background-color: var(--link-button-background-color-grey);
+        color: var(--link-text-white-color);
+
+        font-size: 24px;
+        font-weight: 600;
+        padding: 26px 54px;
+        box-shadow: 0px 19px 45px -10px rgba(13, 15, 18, 0.50);
+        border: none;
+    }
+
+    /** _________NAVBAR-LIST_________ **/
+
+    .navbar-list {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        align-items: center;
+
+        gap: 48px;
+    }
+
+    .navbar-list__link {
+        text-decoration: none;
+        font-size: 18px;
+        color: var(--link-text-black-color);
+    }
+
+    /** _________BULLE-INFO_________ **/
+
+    .bulle-info {
+        border-radius: 24px;
+        padding: 20px;
+        box-shadow: 0px 20px 39px -12px rgba(99, 117, 124, 0.40);
+      }
+      
+      .bulle-info--black {
+        background-color: var(--link-button-background-color-black);
+        color: var(--link-text-white-color);
+      }
+      
+      .bulle-info--white {
+        background-color: var(--link-button-background-color-white);
+        color: var(--link-text-black-color);
+      }
+
+        /** _________BULLE-INFO_HEADER_________ **/
+
+        .bulle-info__header {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .bulle-info__title {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .bulle-info__logo {
+            background-color: #A9C2CB;
+
+            border-radius: 12px;
+            padding: 20px;
+        }
+
+        /** _________BULLE-INFO_CONTAIN_________ **/
+
+        .bulle-info__contain {
+            margin-top: 20px;
+        }
+
+        .bulle-info__contain--templateA {
+            padding: 0px 0px 0px 36px;
+        }
+
+        .bulle-info__contain-block {
+            background-color: antiquewhite;
+
+            height: 44px;
+        }
+
+/** _________HEADER-NAVBAR_________ **/
+/** ------------------------------- **/
+
+.header {
+    padding: 0px 120px 0px 120px;
+}
+
+.header-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 60px;
+    margin-bottom: 81px;
+}
+
+    /** _________LOGO-SITE_________ **/
+
+    .header-navbar__logo {
+        width: 205px;
+    }
+
+    /** _________MOBILE-MENU_______ **/
+
+    .header-navbar__menu-mobile {
+        display: none;
+        width: 24px;
+    }
+
+
+/** _________FOOTER-NAVBAR_________ **/
+/** ------------------------------- **/
+
+.footer {
+    text-align: center;
+    margin-bottom: 80px;
+    padding: 0px 120px 0px 120px;
+    
+    margin-top: 120px;
+    margin-bottom: 80px;
+}
+
+.footer-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-navbar__menu {
+    display: flex;
+    flex-direction: row;
+    gap: 213px;
+}
+
+    /** _________LOGO-SITE_________ **/
+
+    .footer-navbar__logo {
+        width: 118px;
+    }
+
+    .footer__link-contact {
+        display: block;
+        color: var(--link-text-grey-color);
+
+        text-decoration: underline;
+        text-decoration: none;
+        font-size: 18px;
+        margin-top: 80px;
+    }
+
+/** -------------------------------------------------------------------------------------------------------------------------------------------------------------------- **/
+/** _____________________________________________________________________________RESPONSIVE_____________________________________________________________________________ **/
+/** -------------------------------------------------------------------------------------------------------------------------------------------------------------------- **/
+
+/** ____________________________________TABLET_(MAX_1400px)____________________________________ **/
+
+@media all and (max-width: 1400px) {
+    
+/** _________GENERAL_________ **/
+/** ------------------------- **/
+
+    /** _________LINK_BUTTON_________ **/
+    
+    
+    .link-button--white {
+        font-size: 20px;
+        margin-right: 12px;
+    }
+
+    .link-button--black {
+        padding: 16px 40px;
+        font-size: 20px;
+        }
+    
+    .link-button--grey {
+        font-size: 20px;
+        padding: 20px 40px;
+        }
+
+    /** _________NAVBAR-LIST_________ **/
+
+    .navbar-list__link {
+        font-size: 16px;
+    }
+
+/** _________HEADER_________ **/
+/** ------------------------ **/
+
+    .header {
+        padding: 0px 40px 0px 40px;
+    }
+
+    .header-navbar {
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+
+    .navbar-list {
+        gap: 32px;
+    }
+
+    .header-navbar__logo {
+        width: 153px;
+    }
+
+/** _________FOOTER_________ **/
+/** ------------------------ **/
+
+.footer {
+    text-align: left;
+    margin-bottom: 44px;
+    padding: 0px 40px 0px 40px;
+    margin-top: 84px;
+    margin-bottom: 44px;
+}
+
+.footer-navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.footer-navbar__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.footer__link-contact {
+    margin-top: 24px;
+}
+
+    /** _________LOGO-SITE_________ **/
+
+    .footer-navbar__logo {
+        width: 153px;
+    }
+
+}
+
+/** ____________________________________MOBILE_(MAX_600px)____________________________________ **/
+
+@media all and (max-width: 600px) {
+
+/** _________GENERAL_________ **/
+/** ------------------------- **/
+
+    /** _________BULLE-INFO_________ **/
+
+    .bulle-info {
+        padding: 12px;
+      }
+
+        /** _________BULLE-INFO_HEADER_________ **/
+
+        .bulle-info__header {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .bulle-info__title {
+            font-size: 14px;
+        }
+
+        .bulle-info__logo {
+            border-radius: 12px;
+            padding: 17px;
+        }
+
+        /** _________BULLE-INFO_CONTAIN_________ **/
+
+        .bulle-info__contain {
+            margin-top: 12px;
+        }
+
+        .bulle-info__contain--templateA {
+            padding: 0px 0px 0px 12px;
+        }
+
+        .bulle-info__contain-block {
+            background-color: antiquewhite;
+
+            height: 22px;
+        }
+
+/** _________HEADER_________ **/
+/** ------------------------ **/
+
+.header {
+    padding: 0px 24px 0px 24px;
+}
+
+.header-navbar {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.header-navbar__logo {
+    width: 128px;
+}
+
+.navbar-list-header {
+    display: none;
+}
+
+    /** _________MOBILE-MENU_______ **/
+
+    .header-navbar__menu-mobile {
+        display: flex;
+    }
+
+/** _________FOOTER_________ **/
+/** ------------------------ **/
+
+.footer {
+    text-align: left;
+    margin-bottom: 34px;
+    padding: 0px 24px 0px 24px;
+    margin-top: 32px;
+    margin-bottom: 34px;
+}
+
+.navbar-list--footer-mobile {
+    flex-direction: column;
+    align-items:flex-start;
+    gap: 24px;
+}
+
+.footer-navbar__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+}
