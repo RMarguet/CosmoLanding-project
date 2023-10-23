@@ -1,0 +1,709 @@
+$link-button-background-color-white: #FFFFFF;
+$link-button-background-color-grey: #A9C2CB;
+$link-text-white-color: #FFFFFF;
+$link-text-black-color: #020305;
+$box-title-grey: #A9C2CB;
+
+@mixin summary-box-boxshadow {
+  box-shadow: 0px 20px 39px -12px rgba(99, 117, 124, 0.20);
+}
+
+/** _________01_SECTION-INTRODUCTION_________ **/
+/** ----------------------------------------- **/
+
+.section-introduction {
+  padding: 0px 120px 0px 120px;
+
+    &__title {
+      display: inline-block;
+      padding: 60px 0px 230px 60px;
+      width: 28%;
+      color: $link-text-white-color;
+      
+      font-size: 64px;
+      font-weight: 800;
+    }
+
+    /** _________DESCRIB-BOX_________ **/
+
+    &__describ-box {
+        margin-top: 565px;
+    }
+
+    &__paragraphe {
+        font-weight: 500;
+    }
+
+    /** _________CHARACTERE-BOX_________ **/
+
+    &__charactere-describ-box {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: -525px;
+        gap: 157px;
+    }
+
+    &__charactere-contain {
+        position: relative;
+    }
+
+    &__img-charactere {
+      position: relative;
+    }
+
+    /** _________SPACE-BANNIERE_________ **/
+
+    &__space-banniere {
+        border-radius: 40px;
+        background-image:url(images/main/1_introduction/space-banniere_blue.jpg);
+        background-repeat: no-repeat;
+        background-position: -500px -700px;
+    }
+
+    &__img-charactere-deskop {
+        width: 767px;
+    }
+
+    &__img-charactere-mobile {
+        display: none;
+    }
+
+    /** _________TOTAL TIME IN SPACE / EXERCISING / SPACEWALK--CONFIG________  **/
+
+    &__total-time-in-space {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        transform: translate(0%, 70%);
+    }
+
+    &__exercising {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(0%, 225%);
+    }
+
+    &__spacewalk {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(0%, 200%);
+    }
+
+    /** _________LINK-BUTTON_________  **/
+
+    &__linkbutton {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+  
+        margin-top: 40px;
+        gap: 77px;
+    }
+
+    &__linkvideo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    &__logovideo {
+        width: 40px;
+    }
+  }
+
+  /** _________02_SECTION-SPONSOR_________ **/
+  /** ------------------------------------ **/
+  
+  .section-sponsor {
+    margin-top: 120px;
+    padding: 0px 151px 0px 151px;
+
+    &__line {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        gap: 245px;
+    }
+
+    &__logo-sponsor {
+        width: 320px;
+    }
+  }
+  
+  /** _________03_SECTION-INFORMATION_________ **/
+  /** ---------------------------------------- **/
+  
+  .section-information {
+    padding: 0px 120px 0px 120px;
+
+    &__title {
+      display: inline-block;
+      color: $link-text-black-color;
+      font-size: 64px;
+      font-weight: 800;
+    }
+
+    &__theme {
+      display: flex;
+      flex-direction: row;
+      gap: 248px;
+      margin-top: 120px;
+    }
+
+    &__contain {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 74px;
+    }
+  }
+
+  /** _________THEME-BOX_________ **/
+
+  .theme-box {
+    &__logo {
+      background-color: $box-title-grey;
+      display: flex;
+      display: inline-block;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 25px;
+      border-radius: 24px;
+    }
+
+    &__logo-img {
+      width: 39px;
+    }
+
+    &__title {
+      font-size: 24px;
+      font-weight: 800;
+      margin-top: 20px;
+    }
+
+    &__paragraphe {
+      font-weight: 500;
+    }
+  }
+  
+  /** _________04_SECTION-ARGUMENT_________ **/
+  /** ------------------------------------- **/
+  
+  .section-argument {
+    margin-top: 120px;
+    padding: 0px 120px 0px 120px;
+
+    &__title {
+      color: $link-text-white-color;
+      text-align: center;
+      padding: 80px 230px 210px 230px;
+    
+      font-size: 64px;
+      font-weight: 800;
+    }
+
+    &__space-banniere {
+      background-image:url(images/main/4_argument/space-banniere_red.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 40px;
+    }
+
+    &__contain {
+      display: flex;
+      flex-direction: row;
+      padding: 0px 120px 0px 120px;
+      gap: 52px;
+      margin-top: -142px;
+      }
+  }
+
+  /** _________SUMMARY-BOX_________ **/
+  
+  .summary-box {
+    background-color: $link-button-background-color-white;    
+    padding: 52px 52px 60px 52px;
+    border-radius: 24px;
+    @include summary-box-boxshadow();
+
+      &__title {
+        color: $box-title-grey;
+        font-size: 64px;
+        font-weight: 800;
+      }
+
+      &__subtitle {
+        margin-top: 20px;
+        font-size: 24px;
+        font-weight: 800;
+      }
+
+      &__paragraphe {
+        margin-top: 30px;
+        font-weight: 500;
+      }
+  }
+  
+  /** _________05_NEWSLETTERS_________ **/
+  /** -------------------------------- **/
+  
+  .section-newsletters {
+    margin-top: 120px;
+    padding: 0px 120px 0px 120px;
+
+    &__space-banniere {
+      background-image:url(images/main/5_newsletters/space-banniere-grey.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 40px;
+    }
+
+    &__space-banniere-contain {
+      padding: 120px 120px 120px 120px;
+    }
+
+    &__title {
+      color: $link-text-white-color;
+      font-size: 64px;
+      font-weight: 800;
+    }
+
+    &__paragraphe {
+      width: 50%;
+      margin-top: 12px;
+      font-size: 18px;
+      font-weight: 400;
+      color: $link-text-white-color;
+    }
+
+    /** _________FORMULAIRE_________ **/
+
+    &__formulaire {
+      display: flex;
+      flex-direction: row;
+      margin-top: 48px;
+    }
+
+    &__entrer-email {
+      width: 40%;
+      margin-right: 24px;
+      padding: 26px 32px;
+      border-radius: 24px;
+      border: none;
+      outline:none;
+  
+      color: rgba(23, 30, 39, 0.50);
+      font-size: 24px;
+    }
+  }
+  
+  /** -------------------------------------------------------------------------------------------------------------------------------------------------------------------- **/
+  /** _____________________________________________________________________________RESPONSIVE_____________________________________________________________________________ **/
+  /** -------------------------------------------------------------------------------------------------------------------------------------------------------------------- **/
+  
+  /** ____________________________________TABLET_(MAX_1400px)____________________________________ **/
+  
+  @media all and (max-width: 1400px) {
+  /** _________01_SECTION-INTRODUCTION_________ **/
+  /** ----------------------------------------- **/
+  
+  .section-introduction {
+    padding: 0px 40px 0px 40px;
+
+    &__title {
+      padding: 40px 0px 191px 40px;
+      width: 28%;
+      font-size: 40px;
+    }
+
+    &__charactere-describ-box {
+      margin-top: -525px;
+      gap: 21px;
+    }
+
+    /** _________DESCRIB-BOX_________ **/
+
+    &__linkbutton {
+      margin-top: 32px;
+      gap: 24px;
+    }
+    
+    /** _________SPACE-BANNIERE_________ **/
+
+    &__img-charactere {
+      margin-top: 150px;
+    }
+
+    &__charactere-deskop {
+      gap: 21px;
+    }
+    
+    &__img-charactere-deskop {
+      width: 530px;
+    }
+    
+    /** _________TOTAL TIME IN SPACE / EXERCISING / SPACEWALK________  **/
+
+    &__total-time-in-space {
+      bottom: 0;
+      right: 0;
+      left: 0;
+      transform: translate(0%, 0%);
+    }
+
+    &__exercising {
+      top: 0;
+      right: 0;
+      transform: translate(0%, 100%);
+    }
+
+    &__spacewalk {
+      top: 0;
+      left: 0;
+      transform: translate(0%, 180%);
+    }
+  }
+  
+  /** _________02_SECTION-SPONSOR_________ **/
+  /** ------------------------------------ **/
+  
+  .section-sponsor {
+    margin-top: 80px;
+    padding: 0px 57px 0px 57px;
+
+    &__line {
+      gap: 90px;
+    }
+
+    &__logo-sponsor {
+      width: 140px;
+    }
+  }
+  
+  /** _________03_SECTION-INFORMATION_________ **/
+  /** ---------------------------------------- **/
+  
+  .section-information {
+    padding: 0px 40px 0px 40px;
+
+    &__title {
+      font-size: 40px;
+    }
+
+    &__theme {
+      gap: 33px;
+      margin-top: 80px;
+    }
+
+    &__contain {
+      gap: 32px;
+    }
+  }
+  
+  /** _________THEME-BOX_________ **/
+
+  .theme-box {
+    &__logo {
+      padding: 12px;
+      border-radius: 12px;
+    }
+
+    &__logo-img {
+      width: 24px;
+    }
+
+    &__title {
+      font-size: 18px;
+      margin-top: 12px;
+    }
+
+    &__paragraphe {
+      font-size: 14px;
+    }
+  }
+  
+  /** _________04_SECTION-ARGUMENT_________ **/
+  /** ------------------------------------- **/
+  
+  .section-argument {
+    padding: 0px 40px 0px 40px;
+    margin-top: 80px;
+
+    &__title {
+      padding: 40px 90px 170px 90px;
+      font-size: 40px;
+    }
+
+    &__contain {
+      padding: 0px 39px 0px 39px;
+      gap: 32px;
+      margin-top: -100px;
+    }
+  }
+  
+      /** _________SUMMARY-BOX_________ **/
+  
+        .summary-box {
+          padding: 24px
+
+          &__title {
+            font-size: 32px;
+          }
+
+          &__subtitle {
+            margin-top: 12px;
+            font-size: 18px;
+          }
+
+          &__paragraphe {
+            margin-top: 16px;
+            font-size: 14px;
+          }
+        }
+  
+  /** _________05_NEWSLETTERS_________ **/
+  /** -------------------------------- **/
+  
+  .section-newsletters {
+    margin-top: 80px;
+    padding: 0px 40px 0px 40px;
+
+    &__space-banniere-contain {
+      padding: 70px 40px 70px 40px;
+    }
+
+    &__title {
+      font-size: 40px;
+    }
+
+    &__paragraphe {
+      width: 45%;
+      margin-top: 16px;
+      font-size: 14px;
+    }
+
+    /** _________FORMULAIRE_________ **/
+
+    &__formulaire {
+      margin-top: 33px;
+    }
+
+    &__entrer-email {
+      width: 42%;
+      padding: 22px 24px;
+      border-radius: 24px;
+      font-size: 16px;
+    }
+  }
+  }
+  
+  /** ____________________________________MOBILE_(MAX_600px)____________________________________ **/
+  
+  @media all and (max-width: 600px) {
+
+    
+  /** _________01_SECTION-INTRODUCTION_________ **/
+  /** ----------------------------------------- **/
+  
+  .section-introduction {
+    padding: 0px 0px 0px 0px;
+
+    &__title {
+      padding: 32px 0px 229px 24px;
+      width: 60%;
+      font-size: 32px;
+    }
+
+    &__img-charactere {
+      width: 294px;
+      margin-top: 0px;
+    }
+
+    &__charactere-describ-box {
+      display: flex;
+      flex-direction: column;
+      margin-top: -50px;
+      gap: 0px;
+    }
+    
+    /** _________DESCRIB-BOX_________ **/
+
+    &__describ-box {
+      padding: 0px 24px;
+      margin-top: 130px;
+    }
+
+    &__linkbutton {
+      flex-direction: column;
+      align-items:flex-start;
+      margin-top: 32px;
+      gap: 24px;
+    }
+    
+    /** _________CHARACTERE_____________ **/
+    
+    &__charactere-contain {
+      margin: auto;
+      position: relative;
+      margin-top: -150px;
+    }
+
+    &__img-charactere-deskop {
+      display: none;
+    }
+
+    &__img-charactere-mobile {
+      display: flex
+    }
+
+    /** _________SPACE-BANNIERE_________ **/
+
+    &__space-banniere {
+      border-radius: 0px;
+    }
+
+
+    /** _________TOTAL TIME IN SPACE / EXERCISING / SPACEWALK________  **/
+
+    &__total-time-in-space {
+      bottom: 0;
+      right: 0;
+      left: 0;
+      transform: translate(0%, 100%);
+    }
+
+    &__exercising {
+      top: 0;
+      right: 0;
+      transform: translate(0%, 150%);
+    }
+
+    &__spacewalk {
+      top: 0;
+      left: 0;
+      transform: translate(0%, 200%);
+    }
+
+  }
+                
+  /** _________02_SECTION-SPONSOR_________ **/
+  /** ------------------------------------ **/
+          
+  .section-sponsor {
+    margin-top: 70px;
+    padding: 0px 24px 0px 24px;
+
+    &__line {
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+  }
+  
+  /** _________03_SECTION-INFORMATION_________ **/
+  /** ---------------------------------------- **/
+  
+  .section-information {
+    padding: 0px 24px 0px 24px;
+
+    &__title {
+      font-size: 32px;
+    }
+
+    &__theme {
+      margin-top: 40px;
+      flex-direction: column;
+    }
+
+    &__contain {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      gap: 32px;
+    }
+  }
+  
+  /** _________04_SECTION-ARGUMENT_________ **/
+  /** ------------------------------------- **/
+  
+  .section-argument {
+    padding: 0px 0px 0px 0px;
+    margin-top: 70px;
+
+    &__title {
+      padding: 24px 24px 129px 24px;
+      font-size: 32px;
+    }
+
+    &__space-banniere {
+      border-radius: 0px;
+    }
+
+    &__contain {
+      flex-direction: column;
+      padding: 0px 24px 0px 24px;
+      gap: 24px;
+      margin-top: -100px;
+    }
+  }
+  
+  /** _________SUMMARY-BOX_________ **/
+
+  .summary-box {
+    padding: 24px;
+
+    &__title {
+      font-size: 32px;
+    }
+
+    &__subtitle {
+      margin-top: 12px;
+      font-size: 18px;
+    }
+
+    &__paragraphe {
+      margin-top: 14px;
+    }
+  }
+  
+  /** _________05_NEWSLETTERS_________ **/
+  /** -------------------------------- **/
+  
+  .section-newsletters {
+    margin-top: 70px;
+    padding: 0px 0px 0px 0px;
+
+    &__space-banniere {
+      border-radius: 0px;
+    }
+
+    &__space-banniere-contain {
+      padding: 40px 24px 40px 24px;
+    }
+
+    &__paragraphe {
+      width: 100%;
+      margin-top: 16px;
+      font-size: 14px;
+    }
+    
+    /** _________FORMULAIRE_________ **/
+
+    &__formulaire {
+      margin-top: 24px;
+      flex-direction: column;
+    }
+
+    &__entrer-email {
+      width: 100%;
+      padding: 22px 24px;
+      border-radius: 16px;
+      margin-bottom: 12px;
+      font-size: 16px;
+    }
+  }
+  
+  }
