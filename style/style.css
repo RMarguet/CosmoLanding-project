@@ -1,3 +1,11 @@
+@keyframes menu-mobile {
+  from {
+    transform: translateX(1000px);
+  }
+  to {
+    transform: translateX(-100px);
+  }
+}
 /** _________GENERAL_________ **/
 /** ------------------------- **/
 * {
@@ -42,8 +50,6 @@
   padding: 26px 54px;
   border: none;
   cursor: pointer;
-  position: relative;
-  z-index: 1;
 }
 
 /** _________NAVBAR-LIST_________ **/
@@ -128,7 +134,9 @@
   display: none;
 }
 .header-navbar__logo-mobile:active + .header-navbar__menu-mobile {
-  transform: translateX(-100px);
+  animation-name: menu-mobile;
+  animation-duration: 600ms;
+  animation-fill-mode: forwards;
 }
 .header-navbar__menu-mobile {
   display: flex;
@@ -137,7 +145,6 @@
   padding: 30px;
   background-color: #FFFFFF;
   position: absolute;
-  transition: transform 500ms;
   transform: translateX(1000px);
 }
 

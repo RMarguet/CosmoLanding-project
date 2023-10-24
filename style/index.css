@@ -1,3 +1,11 @@
+@keyframes mail {
+  25% {
+    transform: translateX(1%);
+  }
+  75% {
+    transform: translateX(-1%);
+  }
+}
 /** _________01_SECTION-INTRODUCTION_________ **/
 /** ----------------------------------------- **/
 .section-introduction {
@@ -208,7 +216,7 @@
   border-radius: 40px;
 }
 .section-newsletters__space-banniere-contain {
-  padding: 120px 120px 120px 120px;
+  padding: 120px 661px 120px 120px;
 }
 .section-newsletters__title {
   color: #FFFFFF;
@@ -216,7 +224,6 @@
   font-weight: 800;
 }
 .section-newsletters__paragraphe {
-  width: 50%;
   margin-top: 12px;
   font-size: 18px;
   font-weight: 400;
@@ -225,17 +232,26 @@
 .section-newsletters__formulaire {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   margin-top: 48px;
+  gap: 24px;
 }
 .section-newsletters__entrer-email {
-  width: 40%;
-  margin-right: 24px;
+  flex: 1;
   padding: 26px 32px;
   border-radius: 24px;
   border: none;
   outline: none;
   color: rgba(23, 30, 39, 0.5);
   font-size: 24px;
+}
+.section-newsletters__entrer-email:not(:focus):invalid {
+  background-color: #b20a37;
+  color: #FFFFFF;
+  animation-name: mail;
+  animation-duration: 100ms;
+  animation-timing-function: cubic-bezier(0.4, 0.1, 0.6, 0.9);
+  animation-iteration-count: 2;
 }
 
 /** -------------------------------------------------------------------------------------------------------------------------------------------------------------------- **/
@@ -367,13 +383,12 @@
     /** _________FORMULAIRE_________ **/
   }
   .section-newsletters__space-banniere-contain {
-    padding: 70px 40px 70px 40px;
+    padding: 70px 285px 70px 40px;
   }
   .section-newsletters__title {
     font-size: 40px;
   }
   .section-newsletters__paragraphe {
-    width: 45%;
     margin-top: 16px;
     font-size: 14px;
   }
@@ -381,7 +396,6 @@
     margin-top: 33px;
   }
   .section-newsletters__entrer-email {
-    width: 42%;
     padding: 22px 24px;
     border-radius: 24px;
     font-size: 16px;
@@ -524,22 +538,20 @@
     border-radius: 0px;
   }
   .section-newsletters__space-banniere-contain {
-    padding: 40px 24px 40px 24px;
+    padding: 40px 24px;
   }
   .section-newsletters__paragraphe {
-    width: 100%;
     margin-top: 16px;
     font-size: 14px;
   }
   .section-newsletters__formulaire {
     margin-top: 24px;
     flex-direction: column;
+    gap: 12px;
   }
   .section-newsletters__entrer-email {
-    width: 100%;
     padding: 22px 24px;
     border-radius: 16px;
-    margin-bottom: 12px;
     font-size: 16px;
   }
 }/*# sourceMappingURL=index.css.map */

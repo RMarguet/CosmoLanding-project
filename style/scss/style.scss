@@ -13,6 +13,16 @@ $link-text-grey-color: #5C5050;
     box-shadow: 0px 20px 39px -12px rgba(99, 117, 124, 0.40);
 }
 
+@keyframes menu-mobile {
+    from {
+        transform: translateX(1000px);
+    }
+
+    to {
+        transform: translateX(-100px);
+    }
+}
+
 /** _________GENERAL_________ **/
 /** ------------------------- **/
 
@@ -63,9 +73,6 @@ $link-text-grey-color: #5C5050;
             padding: 26px 54px;
             border: none;
             cursor: pointer;
-
-            position: relative;
-            z-index: 1;
         }
     }
 
@@ -171,7 +178,9 @@ $link-text-grey-color: #5C5050;
 
     &__logo-mobile {
         &:active + .header-navbar__menu-mobile {
-            transform: translateX(-100px);
+            animation-name: menu-mobile;
+            animation-duration: 600ms;
+            animation-fill-mode: forwards;
         }
     }
 
@@ -183,8 +192,6 @@ $link-text-grey-color: #5C5050;
 
         background-color: $link-button-background-color-white;
         position: absolute;
-        transition: transform 500ms;
-
         transform: translateX(1000px);
     }
 }
