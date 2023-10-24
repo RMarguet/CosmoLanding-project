@@ -1,0 +1,417 @@
+$link-button-background-color-black:#0D0F12;
+$link-button-background-color-white: #FFFFFF;
+$link-button-background-color-grey: #A9C2CB;
+$link-text-white-color: #FFFFFF;
+$link-text-black-color: #020305;
+$link-text-grey-color: #5C5050;
+
+@mixin link-button-boxshadow {
+    box-shadow: 0px 19px 45px -10px rgba(13, 15, 18, 0.50);
+}
+
+@mixin bulle-info-boxshadow {
+    box-shadow: 0px 20px 39px -12px rgba(99, 117, 124, 0.40);
+}
+
+@keyframes menu-mobile {
+    from {
+        transform: translateX(1000px);
+    }
+
+    to {
+        transform: translateX(-100px);
+    }
+}
+
+/** _________GENERAL_________ **/
+/** ------------------------- **/
+
+* {
+    margin: 0; /** Pour rectifier les marges natives du navigateur **/
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+    /** _________LINK_BUTTON_________ **/
+
+    .link-button {
+        display: inline-block;
+        border-radius: 20px;
+        text-decoration: none;
+
+        &--menu-black {
+            @include link-button-boxshadow();
+            background-color: $link-button-background-color-black;
+            color: $link-text-white-color;
+            padding: 22px 52px;
+            font-size: 18px;
+        }
+
+        &--black {
+            @include link-button-boxshadow();
+            background-color: $link-button-background-color-black;
+            color: $link-text-white-color;
+            padding: 22px 52px;
+            font-size: 24px;
+        }
+
+        &--white {
+            color: $link-text-black-color;
+            font-size: 24px;
+            padding: 26px 0px 26px 0px;
+            margin-right: 20px;
+        }
+
+        &--grey {
+            @include link-button-boxshadow();
+            background-color: $link-button-background-color-grey;
+            color: $link-text-white-color;
+    
+            font-size: 24px;
+            font-weight: 600;
+            padding: 26px 54px;
+            border: none;
+            cursor: pointer;
+        }
+    }
+
+    /** _________NAVBAR-LIST_________ **/
+
+    .navbar-list {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        align-items: center;
+        gap: 48px;
+
+        &__link {
+            text-decoration: none;
+            font-size: 18px;
+            color: $link-text-black-color;
+
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+    }
+
+    /** _________BULLE-INFO_________ **/
+
+    .bulle-info {
+        @include bulle-info-boxshadow;
+        border-radius: 24px;
+        padding: 20px;
+
+        &--black {
+            background-color: $link-button-background-color-black;
+            color: $link-text-white-color;
+        }
+
+        &--white {
+            background-color: $link-button-background-color-white;
+            color: $link-text-black-color;
+        }
+
+        /** _________BULLE-INFO_HEADER_________ **/
+
+        &__header {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+        }
+  
+        &__title {
+            font-size: 18px;
+            font-weight: 600;
+        }
+  
+        &__logo {
+            background-color: $link-button-background-color-grey;
+            border-radius: 12px;
+            padding: 20px;
+        }
+  
+         /** _________BULLE-INFO_CONTAIN_________ **/
+  
+         &__contain {
+            margin-top: 20px;
+  
+            &--templateA {
+                padding: 0px 0px 0px 36px;
+            }
+         }
+  
+         &__contain-block {
+            background-color: antiquewhite;
+            height: 44px;
+         }
+      }
+
+/** _________HEADER-NAVBAR_________ **/
+/** ------------------------------- **/
+
+.header {
+    padding: 0px 120px 0px 120px;
+}
+
+.header-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 60px;
+    margin-bottom: 81px;
+
+    &__logo {
+        width: 205px;
+    }
+
+    /** _________HEADER_MOBILE_________ **/
+
+    &__mobile {
+        position: relative;
+        display: none;
+    }
+
+    &__logo-mobile {
+        &:active + .header-navbar__menu-mobile {
+            animation-name: menu-mobile;
+            animation-duration: 600ms;
+            animation-fill-mode: forwards;
+        }
+    }
+
+    &__menu-mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 30px;
+
+        background-color: $link-button-background-color-white;
+        position: absolute;
+        transform: translateX(1000px);
+    }
+}
+
+
+/** _________FOOTER-NAVBAR_________ **/
+/** ------------------------------- **/
+
+.footer {
+    text-align: center;
+    margin-bottom: 80px;
+    padding: 0px 120px 0px 120px;
+    
+    margin-top: 120px;
+    margin-bottom: 80px;
+
+    &__link-contact {
+        display: block;
+        color: $link-text-grey-color;
+
+        text-decoration: underline;
+        text-decoration: none;
+        font-size: 18px;
+        margin-top: 80px;
+    }
+}
+
+.footer-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__menu {
+        display: flex;
+        flex-direction: row;
+        gap: 213px;
+    }
+
+    &__logo {
+        width: 118px;
+    }
+}
+
+/** -------------------------------------------------------------------------------------------------------------------------------------------------------------------- **/
+/** _____________________________________________________________________________RESPONSIVE_____________________________________________________________________________ **/
+/** -------------------------------------------------------------------------------------------------------------------------------------------------------------------- **/
+
+/** ____________________________________TABLET_(MAX_1400px)____________________________________ **/
+
+@media all and (max-width: 1400px) {
+    
+/** _________GENERAL_________ **/
+/** ------------------------- **/
+
+    /** _________LINK_BUTTON_________ **/
+    
+    .link-button {
+        &--white {
+            font-size: 20px;
+            margin-right: 12px;
+        }
+
+        &--black {
+            padding: 16px 40px;
+            font-size: 20px;
+        }
+
+        &--grey {
+            font-size: 20px;
+            padding: 20px 40px;
+        }
+    }
+
+    /** _________NAVBAR-LIST_________ **/
+
+    .navbar-list {
+        &__link {
+            font-size: 16px;
+        }
+    }
+
+/** _________HEADER_________ **/
+/** ------------------------ **/
+
+    .header {
+        padding: 0px 40px 0px 40px;
+    }
+
+    .header-navbar {
+        margin-top: 32px;
+        margin-bottom: 32px;
+
+        &__logo {
+            width: 153px;
+        }
+    }
+
+    .navbar-list {
+        gap: 32px;
+    }
+
+/** _________FOOTER_________ **/
+/** ------------------------ **/
+
+.footer {
+    text-align: left;
+    margin-bottom: 44px;
+    padding: 0px 40px 0px 40px;
+    margin-top: 84px;
+    margin-bottom: 44px;
+
+    &__link-contact {
+        margin-top: 24px;
+    }
+}
+
+.footer-navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    &__menu {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    &__logo {
+        width: 153px;
+    }
+}
+}
+
+/** ____________________________________MOBILE_(MAX_600px)____________________________________ **/
+
+@media all and (max-width: 600px) {
+
+/** _________GENERAL_________ **/
+/** ------------------------- **/
+
+    /** _________BULLE-INFO_________ **/
+
+    .bulle-info {
+        padding: 12px;
+
+        &__header {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 12px;
+        }
+
+        &__title {
+            font-size: 14px;
+        }
+
+        &__logo {
+            border-radius: 12px;
+            padding: 17px;
+        }
+
+        &__contain {
+            margin-top: 12px;
+
+            &--templateA {
+                padding: 0px 0px 0px 12px;
+            }
+        }
+
+        &__contain-block {
+            background-color: antiquewhite; //couleur temporaire
+            height: 22px;
+        }
+      }
+
+/** _________HEADER_________ **/
+/** ------------------------ **/
+
+.header {
+    padding: 0px 24px 0px 24px;
+}
+
+.header-navbar {
+    margin-top: 24px;
+    margin-bottom: 24px;
+
+    &__logo {
+        width: 128px;
+    }
+
+    &__mobile {
+        display: flex;
+    }
+}
+
+.navbar-list-header {
+    display: none;
+}
+
+/** _________FOOTER_________ **/
+/** ------------------------ **/
+
+.footer {
+    text-align: left;
+    margin-bottom: 34px;
+    padding: 0px 24px 0px 24px;
+    margin-top: 32px;
+    margin-bottom: 34px;
+}
+
+.navbar-list--footer-mobile {
+    flex-direction: column;
+    align-items:flex-start;
+    gap: 24px;
+}
+
+.footer-navbar__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+}

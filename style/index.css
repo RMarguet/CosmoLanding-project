@@ -1,117 +1,100 @@
+@keyframes mail {
+  25% {
+    transform: translateX(1%);
+  }
+  75% {
+    transform: translateX(-1%);
+  }
+}
 /** _________01_SECTION-INTRODUCTION_________ **/
 /** ----------------------------------------- **/
-
 .section-introduction {
   padding: 0px 120px 0px 120px;
+  /** _________DESCRIB-BOX_________ **/
+  /** _________CHARACTERE-BOX_________ **/
+  /** _________SPACE-BANNIERE_________ **/
+  /** _________TOTAL TIME IN SPACE / EXERCISING / SPACEWALK--CONFIG________  **/
+  /** _________LINK-BUTTON_________  **/
 }
-
 .section-introduction__title {
   display: inline-block;
   padding: 60px 0px 230px 60px;
   width: 28%;
-  color: var(--link-text-white-color);
-
+  color: #FFFFFF;
   font-size: 64px;
   font-weight: 800;
 }
-
+.section-introduction__describ-box {
+  margin-top: 565px;
+}
+.section-introduction__paragraphe {
+  font-weight: 500;
+}
 .section-introduction__charactere-describ-box {
   display: flex;
   flex-direction: row-reverse;
   margin-top: -525px;
   gap: 157px;
 }
-
-  /** _________SPACE-BANNIERE_________ **/
-
-  .section-introduction__space-banniere {
-    border-radius: 40px;
-
-    background-image:url(images/main/1_introduction/space-banniere_blue.jpg);
-    background-repeat: no-repeat;
-    background-position: -500px -700px;
-  }
-
-
-  .section-introduction__img-charactere-deskop {
-    width: 767px;
-  }
-
-  .section-introduction__img-charactere-mobile {
-    display: none;
-  }
-
-    /** _________CHARACTERE-CONTAIN________  **/
-
-    .section-introduction__charactere-contain {
-      position: relative;
-    }
-
-
-      /** _________TOTAL TIME IN SPACE / EXERCISING / SPACEWALK________  **/
-
-
-      .section-introduction__total-time-in-space {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        transform: translate(0%, 70%);
-      }
-
-      .section-introduction__exercising {
-        position: absolute;
-        top: 0;
-        right: 0;
-        transform: translate(0%, 225%);
-      }
-
-      .section-introduction__spacewalk {
-        position: absolute;
-        top: 0;
-        left: 0;
-        transform: translate(0%, 200%);
-      }
-
-  /** _________DESCRIB-BOX_________ **/
-
-  .section-introduction__describ-box {
-    margin-top: 565px;
-  }
-
-  .section-introduction__paragraphe {
-    font-weight: 500;
-  }
-
-    /** _________LINK-BUTTON_________  **/
-
-    .section-introduction__linkbutton {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-
-      margin-top: 40px;
-      gap: 77px;
-    }
-
-    .section-introduction__linkvideo {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-    }
-
-    .section-introduction__logovideo {
-      width: 40px;
-    }
+.section-introduction__charactere-contain {
+  position: relative;
+}
+.section-introduction__img-charactere {
+  position: relative;
+}
+.section-introduction__space-banniere {
+  border-radius: 40px;
+  background-image: url(images/main/1_introduction/space-banniere_blue.jpg);
+  background-repeat: no-repeat;
+  background-position: -500px -700px;
+}
+.section-introduction__img-charactere-deskop {
+  width: 767px;
+}
+.section-introduction__img-charactere-mobile {
+  display: none;
+}
+.section-introduction__total-time-in-space {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  transform: translate(0%, 70%);
+}
+.section-introduction__exercising {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(0%, 225%);
+}
+.section-introduction__spacewalk {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(0%, 200%);
+}
+.section-introduction__linkbutton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 40px;
+  gap: 77px;
+}
+.section-introduction__linkvideo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.section-introduction__logovideo {
+  width: 40px;
+}
 
 /** _________02_SECTION-SPONSOR_________ **/
 /** ------------------------------------ **/
-
 .section-sponsor {
   margin-top: 120px;
   padding: 0px 151px 0px 151px;
 }
-
 .section-sponsor__line {
   display: flex;
   flex-wrap: nowrap;
@@ -119,583 +102,456 @@
   justify-content: center;
   gap: 245px;
 }
-
 .section-sponsor__logo-sponsor {
   width: 320px;
 }
 
 /** _________03_SECTION-INFORMATION_________ **/
 /** ---------------------------------------- **/
-
 .section-information {
   padding: 0px 120px 0px 120px;
 }
+.section-information__title {
+  display: inline-block;
+  color: #020305;
+  font-size: 64px;
+  font-weight: 800;
+}
+.section-information__theme {
+  display: flex;
+  flex-direction: row;
+  gap: 248px;
+  margin-top: 120px;
+}
+.section-information__contain {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 74px;
+}
 
-  /** _________THEME_________ **/
-
-  .section-information__title {
-    display: inline-block;
-    color: var(--link-text-black-color);
-
-    font-size: 64px;
-    font-weight: 800;
-  }
-
-  .section-information__theme {
-    display: flex;
-    flex-direction: row;
-    gap: 248px;
-    margin-top: 120px;
-  }
-
-  .section-information__theme-box {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 74px;
-  }
-
-      /** _________THEME-BOX_________ **/
-
-      .theme-box__logo {
-        background-color: #A9C2CB;
-
-        display: flex;
-        display: inline-block;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 25px;
-        border-radius: 24px;
-      }
-
-      .theme-box__logo-img {
-        width: 39px;
-      }
-
-      .theme-box__title {
-        font-size: 24px;
-        font-weight: 800;
-
-        margin-top: 20px;
-      }
-
-      .theme-box__paragraphe {
-        font-weight: 500;
-      }
+/** _________THEME-BOX_________ **/
+.theme-box__logo {
+  background-color: #A9C2CB;
+  display: flex;
+  display: inline-block;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  border-radius: 24px;
+}
+.theme-box__logo-img {
+  width: 39px;
+}
+.theme-box__title {
+  font-size: 24px;
+  font-weight: 800;
+  margin-top: 20px;
+}
+.theme-box__paragraphe {
+  font-weight: 500;
+}
 
 /** _________04_SECTION-ARGUMENT_________ **/
 /** ------------------------------------- **/
-
-      .section-argument {
-        margin-top: 120px;
-        padding: 0px 120px 0px 120px;
-      }
-
-      .section-argument__title {
-        color: var(--link-text-white-color);
-        text-align: center;
-        padding: 80px 230px 210px 230px;
-
-        font-size: 64px;
-        font-weight: 800;
-      }
-
-      .section-argument__space-banniere {
-        background-image:url(images/main/4_argument/space-banniere_red.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        border-radius: 40px;
-      }
-
-    /** _________SUMMARY-BOX_________ **/
-
-    .section-argument__summary-box {
-      display: flex;
-      flex-direction: row;
-      padding: 0px 120px 0px 120px;
-      gap: 52px;
-      margin-top: -142px;
-    }
-
-      .summary-box {
-        background-color: var(--link-button-background-color-white);
-        
-        padding: 52px 52px 60px 52px;
-        border-radius: 24px;
-        box-shadow: 0px 20px 39px -12px rgba(99, 117, 124, 0.20);
-      }
-
-      .summary-box__title {
-        color: #A9C2CB;
-        font-size: 64px;
-        font-weight: 800;
-      }
-
-      .summary-box__subtitle {
-        margin-top: 20px;
-        font-size: 24px;
-        font-weight: 800;
-      }
-
-      .summary-box__paragraphe {
-        margin-top: 30px;
-        font-weight: 500;
-      }
-
-/** _________05_NEWSLETTERS_________ **/
-/** -------------------------------- **/
-
-.section-newsletters {
+.section-argument {
   margin-top: 120px;
   padding: 0px 120px 0px 120px;
 }
-
-.section-newsletters__space-banniere {
-  background-image:url(images/main/5_newsletters/space-banniere-grey.jpg);
+.section-argument__title {
+  color: #FFFFFF;
+  text-align: center;
+  padding: 80px 230px 210px 230px;
+  font-size: 64px;
+  font-weight: 800;
+}
+.section-argument__space-banniere {
+  background-image: url(images/main/4_argument/space-banniere_red.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 40px;
 }
-
-.section-argument__space-banniere-contain {
-  padding: 120px 120px 120px 120px;
+.section-argument__contain {
+  display: flex;
+  flex-direction: row;
+  padding: 0px 120px 0px 120px;
+  gap: 52px;
+  margin-top: -142px;
 }
 
-.section-newsletters__title {
-  color: var(--link-text-white-color);
-
+/** _________SUMMARY-BOX_________ **/
+.summary-box {
+  background-color: #FFFFFF;
+  padding: 52px 52px 60px 52px;
+  border-radius: 24px;
+  box-shadow: 0px 20px 39px -12px rgba(99, 117, 124, 0.2);
+}
+.summary-box__title {
+  color: #A9C2CB;
   font-size: 64px;
   font-weight: 800;
 }
+.summary-box__subtitle {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: 800;
+}
+.summary-box__paragraphe {
+  margin-top: 30px;
+  font-weight: 500;
+}
 
+/** _________05_NEWSLETTERS_________ **/
+/** -------------------------------- **/
+.section-newsletters {
+  margin-top: 120px;
+  padding: 0px 120px 0px 120px;
+  /** _________FORMULAIRE_________ **/
+}
+.section-newsletters__space-banniere {
+  background-image: url(images/main/5_newsletters/space-banniere-grey.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 40px;
+}
+.section-newsletters__space-banniere-contain {
+  padding: 120px 661px 120px 120px;
+}
+.section-newsletters__title {
+  color: #FFFFFF;
+  font-size: 64px;
+  font-weight: 800;
+}
 .section-newsletters__paragraphe {
-  width: 50%;
   margin-top: 12px;
   font-size: 18px;
   font-weight: 400;
-  color: var(--link-text-white-color);
+  color: #FFFFFF;
 }
-
-  /** _________FORMULAIRE_________ **/
-
-  .section-newsletters__formulaire {
-    display: flex;
-    flex-direction: row;
-    margin-top: 48px;
-  }
-
-  .section-newsletters__entrer_email {
-    width: 40%;
-    margin-right: 24px;
-    padding: 26px 32px;
-    border-radius: 24px;
-    border: none;
-    outline:none;
-
-    color: rgba(23, 30, 39, 0.50);
-    font-size: 24px;
-  }
+.section-newsletters__formulaire {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 48px;
+  gap: 24px;
+}
+.section-newsletters__entrer-email {
+  flex: 1;
+  padding: 26px 32px;
+  border-radius: 24px;
+  border: none;
+  outline: none;
+  color: rgba(23, 30, 39, 0.5);
+  font-size: 24px;
+}
+.section-newsletters__entrer-email:not(:focus):invalid {
+  background-color: #b20a37;
+  color: #FFFFFF;
+  animation-name: mail;
+  animation-duration: 100ms;
+  animation-timing-function: cubic-bezier(0.4, 0.1, 0.6, 0.9);
+  animation-iteration-count: 2;
+}
 
 /** -------------------------------------------------------------------------------------------------------------------------------------------------------------------- **/
 /** _____________________________________________________________________________RESPONSIVE_____________________________________________________________________________ **/
 /** -------------------------------------------------------------------------------------------------------------------------------------------------------------------- **/
-
 /** ____________________________________TABLET_(MAX_1400px)____________________________________ **/
-
 @media all and (max-width: 1400px) {
-
-/** _________01_SECTION-INTRODUCTION_________ **/
-/** ----------------------------------------- **/
-
-.section-introduction {
-  padding: 0px 40px 0px 40px;
-}
-
-.section-introduction__title {
-  padding: 40px 0px 191px 40px;
-  width: 28%;
-
-  font-size: 40px;
-}
-
-.section-introduction__charactere-describ-box {
-  margin-top: -350px;
-  gap: 21px;
-}
-
-  /** _________SPACE-BANNIERE_________ **/
-
-  .section-introduction__img-charactere-deskop {
-    width: 530px;
+  /** _________01_SECTION-INTRODUCTION_________ **/
+  /** ----------------------------------------- **/
+  .section-introduction {
+    padding: 0px 40px 0px 40px;
+    /** _________DESCRIB-BOX_________ **/
+    /** _________SPACE-BANNIERE_________ **/
+    /** _________TOTAL TIME IN SPACE / EXERCISING / SPACEWALK________  **/
   }
-
-  /** _________DESCRIB-BOX_________ **/
-
-  .section-introduction__describ-box {
-    margin-top: 374px;
+  .section-introduction__title {
+    padding: 40px 0px 191px 40px;
+    width: 28%;
+    font-size: 40px;
   }
-
+  .section-introduction__charactere-describ-box {
+    margin-top: -525px;
+    gap: 21px;
+  }
   .section-introduction__linkbutton {
     margin-top: 32px;
     gap: 24px;
   }
-
-  /** _________TOTAL TIME IN SPACE / EXERCISING / SPACEWALK________  **/
-
-
+  .section-introduction__img-charactere {
+    margin-top: 150px;
+  }
+  .section-introduction__charactere-deskop {
+    gap: 21px;
+  }
+  .section-introduction__img-charactere-deskop {
+    width: 530px;
+  }
   .section-introduction__total-time-in-space {
     bottom: 0;
     right: 0;
     left: 0;
     transform: translate(0%, 0%);
   }
-
   .section-introduction__exercising {
     top: 0;
     right: 0;
     transform: translate(0%, 100%);
   }
-
   .section-introduction__spacewalk {
     top: 0;
     left: 0;
     transform: translate(0%, 180%);
   }
-
-/** _________02_SECTION-SPONSOR_________ **/
-/** ------------------------------------ **/
-
-.section-sponsor {
-  margin-top: 80px;
-  padding: 0px 57px 0px 57px;
-}
-
-.section-sponsor__line {
-  gap: 90px;
-}
-
-.section-sponsor__logo-sponsor {
-  width: 140px;
-}
-
-/** _________03_SECTION-INFORMATION_________ **/
-/** ---------------------------------------- **/
-
-.section-information {
-  padding: 0px 40px 0px 40px;
-}
-
-.section-information__title {
-  font-size: 40px;
-}
-
-.section-information__theme {
-  gap: 33px;
-  margin-top: 80px;
-}
-
-.section-information__theme-box {
-  gap: 32px;
-}
-
-      /** _________THEME-BOX_________ **/
-
-      .theme-box__logo {
-        padding: 12px;
-        border-radius: 12px;
-      }
-
-      .theme-box__logo-img {
-        width: 24px;
-      }
-
-      .theme-box__title {
-        font-size: 18px;
-        margin-top: 12px;
-      }
-
-      .theme-box__paragraphe {
-        font-size: 14px;
-      }
-
-/** _________04_SECTION-ARGUMENT_________ **/
-/** ------------------------------------- **/
-
-.section-argument {
-  padding: 0px 40px 0px 40px;
-  margin-top: 80px;
-}
-
-.section-argument__title {
-  padding: 40px 90px 170px 90px;
-  font-size: 40px;
-}
-
-    /** _________SUMMARY-BOX_________ **/
-
-    .section-argument__summary-box {
-      padding: 0px 39px 0px 39px;
-      gap: 32px;
-      margin-top: -100px;
-    }
-
-      .summary-box {
-        padding: 24px
-      }
-
-      .summary-box__title {
-        font-size: 32px;
-      }
-
-      .summary-box__subtitle {
-        margin-top: 12px;
-        font-size: 18px;
-      }
-
-      .summary-box__paragraphe {
-        margin-top: 16px;
-        font-size: 14px;
-      }
-
-/** _________05_NEWSLETTERS_________ **/
-/** -------------------------------- **/
-
-.section-newsletters {
-  margin-top: 80px;
-  padding: 0px 40px 0px 40px;
-}
-
-.section-argument__space-banniere-contain {
-  padding: 70px 40px 70px 40px;
-}
-
-.section-newsletters__title {
-  font-size: 40px;
-}
-
-.section-newsletters__paragraphe {
-  width: 45%;
-  margin-top: 16px;
-  font-size: 14px;
-}
-
-  /** _________FORMULAIRE_________ **/
-
+  /** _________02_SECTION-SPONSOR_________ **/
+  /** ------------------------------------ **/
+  .section-sponsor {
+    margin-top: 80px;
+    padding: 0px 57px 0px 57px;
+  }
+  .section-sponsor__line {
+    gap: 90px;
+  }
+  .section-sponsor__logo-sponsor {
+    width: 140px;
+  }
+  /** _________03_SECTION-INFORMATION_________ **/
+  /** ---------------------------------------- **/
+  .section-information {
+    padding: 0px 40px 0px 40px;
+  }
+  .section-information__title {
+    font-size: 40px;
+  }
+  .section-information__theme {
+    gap: 33px;
+    margin-top: 80px;
+  }
+  .section-information__contain {
+    gap: 32px;
+  }
+  /** _________THEME-BOX_________ **/
+  .theme-box__logo {
+    padding: 12px;
+    border-radius: 12px;
+  }
+  .theme-box__logo-img {
+    width: 24px;
+  }
+  .theme-box__title {
+    font-size: 18px;
+    margin-top: 12px;
+  }
+  .theme-box__paragraphe {
+    font-size: 14px;
+  }
+  /** _________04_SECTION-ARGUMENT_________ **/
+  /** ------------------------------------- **/
+  .section-argument {
+    padding: 0px 40px 0px 40px;
+    margin-top: 80px;
+  }
+  .section-argument__title {
+    padding: 40px 90px 170px 90px;
+    font-size: 40px;
+  }
+  .section-argument__contain {
+    padding: 0px 39px 0px 39px;
+    gap: 32px;
+    margin-top: -100px;
+  }
+  /** _________SUMMARY-BOX_________ **/
+  .summary-box {
+    padding: 24px .summary-box __title;
+    padding-font-size: 32px;
+  }
+  .summary-box__subtitle {
+    margin-top: 12px;
+    font-size: 18px;
+  }
+  .summary-box__paragraphe {
+    margin-top: 16px;
+    font-size: 14px;
+  }
+  /** _________05_NEWSLETTERS_________ **/
+  /** -------------------------------- **/
+  .section-newsletters {
+    margin-top: 80px;
+    padding: 0px 40px 0px 40px;
+    /** _________FORMULAIRE_________ **/
+  }
+  .section-newsletters__space-banniere-contain {
+    padding: 70px 285px 70px 40px;
+  }
+  .section-newsletters__title {
+    font-size: 40px;
+  }
+  .section-newsletters__paragraphe {
+    margin-top: 16px;
+    font-size: 14px;
+  }
   .section-newsletters__formulaire {
     margin-top: 33px;
   }
-
-  .section-newsletters__entrer_email {
-    width: 42%;
+  .section-newsletters__entrer-email {
     padding: 22px 24px;
     border-radius: 24px;
-
     font-size: 16px;
   }
-
 }
-
 /** ____________________________________MOBILE_(MAX_600px)____________________________________ **/
-
 @media all and (max-width: 600px) {
-
-/** _________01_SECTION-INTRODUCTION_________ **/
-/** ----------------------------------------- **/
-
-.section-introduction {
-  padding: 0px 0px 0px 0px;
-}
-
-.section-introduction__title {
-  padding: 32px 0px 229px 24px;
-  width: 60%;
-
-  font-size: 32px;
-}
-
-.section-introduction__img-charactere {
-  width: 294px;
-}
-
-.section-introduction__charactere-describ-box {
-  display: flex;
-  flex-direction: column;
-  margin-top: -200px;
-  gap: 0px;
-}
-
-  /** _________SPACE-BANNIERE_________ **/
-
-  .section-introduction__space-banniere {
-    border-radius: 0px;
+  /** _________01_SECTION-INTRODUCTION_________ **/
+  /** ----------------------------------------- **/
+  .section-introduction {
+    padding: 0px 0px 0px 0px;
+    /** _________DESCRIB-BOX_________ **/
+    /** _________CHARACTERE_____________ **/
+    /** _________SPACE-BANNIERE_________ **/
+    /** _________TOTAL TIME IN SPACE / EXERCISING / SPACEWALK________  **/
   }
-
-  /** _________CHARACTERE_____________ **/
-
-  .section-introduction__img-charactere-deskop {
-    display: none;
+  .section-introduction__title {
+    padding: 32px 0px 229px 24px;
+    width: 60%;
+    font-size: 32px;
   }
-
-  .section-introduction__img-charactere-mobile {
-    display: flex
+  .section-introduction__img-charactere {
+    width: 294px;
+    margin-top: 0px;
   }
-
-  .section-introduction__charactere-contain {
-    margin: auto;
-    position: relative;
+  .section-introduction__charactere-describ-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: -50px;
+    gap: 0px;
   }
-
-        /** _________TOTAL TIME IN SPACE / EXERCISING / SPACEWALK________  **/
-
-
-        .section-introduction__total-time-in-space {
-          bottom: 0;
-          right: 0;
-          left: 0;
-          transform: translate(0%, 100%);
-        }
-  
-        .section-introduction__exercising {
-          top: 0;
-          right: 0;
-          transform: translate(0%, 150%);
-        }
-  
-        .section-introduction__spacewalk {
-          top: 0;
-          left: 0;
-          transform: translate(0%, 200%);
-        }
-
-  /** _________DESCRIB-BOX_________ **/
-
   .section-introduction__describ-box {
     padding: 0px 24px;
     margin-top: 130px;
   }
-
   .section-introduction__linkbutton {
     flex-direction: column;
-    align-items:flex-start;
+    align-items: flex-start;
     margin-top: 32px;
     gap: 24px;
   }
-
-
-/** _________02_SECTION-SPONSOR_________ **/
-/** ------------------------------------ **/
-
-.section-sponsor {
-  margin-top: 70px;
-  padding: 0px 24px 0px 24px;
-}
-
-.section-sponsor__line {
-  flex-wrap: wrap;
-  gap: 24px;
-}
-
-/** _________03_SECTION-INFORMATION_________ **/
-/** ---------------------------------------- **/
-
-.section-information {
-  padding: 0px 24px 0px 24px;
-}
-
-.section-information__title {
-  font-size: 32px;
-}
-
-.section-information__theme {
-  margin-top: 40px;
-  flex-direction: column;
-}
-
-.section-information__theme-box {
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  gap: 32px;
-}
-
-/** _________04_SECTION-ARGUMENT_________ **/
-/** ------------------------------------- **/
-
-.section-argument {
-  padding: 0px 0px 0px 0px;
-  margin-top: 70px;
-}
-
-.section-argument__title {
-  padding: 24px 24px 129px 24px;
-  font-size: 32px;
-}
-
-.section-argument__space-banniere {
-  border-radius: 0px;
-}
-
-    /** _________SUMMARY-BOX_________ **/
-
-    .section-argument__summary-box {
-      flex-direction: column;
-      padding: 0px 24px 0px 24px;
-      gap: 24px;
-      margin-top: -100px;
-    }
-
-      .summary-box {
-        padding: 24px;
-      }
-
-      .summary-box__title {
-        font-size: 32px;
-      }
-
-      .summary-box__subtitle {
-        margin-top: 12px;
-        font-size: 18px;
-      }
-
-      .summary-box__paragraphe {
-        margin-top: 14px;
-      }
-
-/** _________05_NEWSLETTERS_________ **/
-/** -------------------------------- **/
-
-.section-newsletters {
-  margin-top: 70px;
-  padding: 0px 0px 0px 0px;
-}
-
-.section-newsletters__space-banniere {
-  border-radius: 0px;
-}
-
-.section-argument__space-banniere-contain {
-  padding: 40px 24px 40px 24px;
-}
-
-.section-newsletters__paragraphe {
-  width: 100%;
-  margin-top: 16px;
-  font-size: 14px;
-}
-
-  /** _________FORMULAIRE_________ **/
-
+  .section-introduction__charactere-contain {
+    margin: auto;
+    position: relative;
+    margin-top: -150px;
+  }
+  .section-introduction__img-charactere-deskop {
+    display: none;
+  }
+  .section-introduction__img-charactere-mobile {
+    display: flex;
+  }
+  .section-introduction__space-banniere {
+    border-radius: 0px;
+  }
+  .section-introduction__total-time-in-space {
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transform: translate(0%, 100%);
+  }
+  .section-introduction__exercising {
+    top: 0;
+    right: 0;
+    transform: translate(0%, 150%);
+  }
+  .section-introduction__spacewalk {
+    top: 0;
+    left: 0;
+    transform: translate(0%, 200%);
+  }
+  /** _________02_SECTION-SPONSOR_________ **/
+  /** ------------------------------------ **/
+  .section-sponsor {
+    margin-top: 70px;
+    padding: 0px 24px 0px 24px;
+  }
+  .section-sponsor__line {
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  /** _________03_SECTION-INFORMATION_________ **/
+  /** ---------------------------------------- **/
+  .section-information {
+    padding: 0px 24px 0px 24px;
+  }
+  .section-information__title {
+    font-size: 32px;
+  }
+  .section-information__theme {
+    margin-top: 40px;
+    flex-direction: column;
+  }
+  .section-information__contain {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 32px;
+  }
+  /** _________04_SECTION-ARGUMENT_________ **/
+  /** ------------------------------------- **/
+  .section-argument {
+    padding: 0px 0px 0px 0px;
+    margin-top: 70px;
+  }
+  .section-argument__title {
+    padding: 24px 24px 129px 24px;
+    font-size: 32px;
+  }
+  .section-argument__space-banniere {
+    border-radius: 0px;
+  }
+  .section-argument__contain {
+    flex-direction: column;
+    padding: 0px 24px 0px 24px;
+    gap: 24px;
+    margin-top: -100px;
+  }
+  /** _________SUMMARY-BOX_________ **/
+  .summary-box {
+    padding: 24px;
+  }
+  .summary-box__title {
+    font-size: 32px;
+  }
+  .summary-box__subtitle {
+    margin-top: 12px;
+    font-size: 18px;
+  }
+  .summary-box__paragraphe {
+    margin-top: 14px;
+  }
+  /** _________05_NEWSLETTERS_________ **/
+  /** -------------------------------- **/
+  .section-newsletters {
+    margin-top: 70px;
+    padding: 0px 0px 0px 0px;
+    /** _________FORMULAIRE_________ **/
+  }
+  .section-newsletters__space-banniere {
+    border-radius: 0px;
+  }
+  .section-newsletters__space-banniere-contain {
+    padding: 40px 24px;
+  }
+  .section-newsletters__paragraphe {
+    margin-top: 16px;
+    font-size: 14px;
+  }
   .section-newsletters__formulaire {
     margin-top: 24px;
     flex-direction: column;
+    gap: 12px;
   }
-
-  .section-newsletters__entrer_email {
-    width: 100%;
+  .section-newsletters__entrer-email {
     padding: 22px 24px;
     border-radius: 16px;
-    margin-bottom: 12px;
     font-size: 16px;
   }
-
-}
+}/*# sourceMappingURL=index.css.map */
